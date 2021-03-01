@@ -135,4 +135,22 @@ h1 {
   font-weight: 500;
 }
 
+.footer-top p {
+  font-size: 0.8rem;
+  color: #666;
+  margin: 0;
+  padding-left: 1em;
+}
+.footer-top .social-icons li {
+  padding-left: 10px;
+}
+.footer-top .social-icons a {
+  color: #666;
+  font-size: 0.933rem;
+}
+.footer-top .footer-links-edition li,
+.footer-top .footer-links-mini li {
+  border-right: 1px solid #d9d9d9;
+}
+
 /*# sourceMappingURL=main.css.map */
