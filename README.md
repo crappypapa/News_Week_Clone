@@ -4,7 +4,7 @@ A Clone of a News Week page using Bootsrap
 
 ![screenshot 1](./NewsWeekSmallScreen.png)
 ![screenshot 2](./NewsWeekMediumScreen.png)
-![screenshot 3](./NewsWeekBigScreen.png)
+![screenshot 3](./NewsWeekBigscreen.png)
 
 ## Built With
 
@@ -27,11 +27,11 @@ To get a local copy up and running:
 
 👤 **Author1**
 
-- GitHub: [@githubhandle](https://github.com/crappypapa)
+- GitHub: [@crappypapa](https://github.com/crappypapa)
 
 👤 **Author2**
 
-- GitHub: [@githubhandle](https://github.com/marijanbrvar)
+- GitHub: [@marijanbrvar](https://github.com/marijanbrvar)
 
 
 ## 🤝 Contributing
