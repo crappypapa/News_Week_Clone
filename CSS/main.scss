@@ -1,7 +1,7 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css");
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;500;700&display=swap");
 h1 {
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 .page-header {
@@ -11,24 +11,26 @@ h1 {
 .top-nav {
   @media screen and(max-width: 980px) {
     height: 50px;
+    position: fixed;
+    width: 100%;
     .brand-logo {
       margin: auto 0;
     }
     .brand-logo > svg {
-      transition: height width .6s;
-      height: 20px!important;
+      transition: height width 0.6s;
+      height: 20px !important;
       width: 132px;
     }
   }
   height: 92px;
   background-color: #f72210;
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   .top-nav-date {
     color: white;
     font-weight: 300;
   }
   .brand-logo > img {
-    fill: #fff
+    fill: #fff;
   }
   .top-nav-action {
     margin: auto 0;
@@ -66,9 +68,9 @@ h1 {
 
 .header-bottom {
   background-color: #f72210;
-  margin-right: 10em;
+  border-bottom: 2px solid rgb(238, 238, 238);
   &::before {
-    width: 66px!important;
+    width: 66px !important;
     position: absolute;
     top: 92;
     right: 0;
@@ -77,23 +79,58 @@ h1 {
     background-color: #f72210;
     border-left: 12px solid white;
     border-top: 13px solid #f72210;
-
   }
   .mid-nav {
     background-color: #fff;
+    padding-right: 2em;
+    ul {
+      margin: auto 0;
+      li:first-child {
+        border-left-width: 0;
+      }
+      li {
+        flex-grow: 1;
+        text-align: center;
+        border-left-width: 1px;
+        border-left-style: solid;
+        border-left-color: #d9d9d9;
+      }
+    }
     a {
       text-decoration: none;
-      font-family: 'Roboto Condensed', sans-serif;
+      font-family: "Roboto Condensed", sans-serif;
       color: #111;
       font-size: 1.266rem;
       font-weight: 700;
     }
-    input{
-      width: 60px;
-      height: 54px;
+    .mid-nav-search {
+      input {
+        width: 60px;
+        height: 54px;
+        outline: none;
+        border: none;
+      }
+      i {
+        font-size: 1.2rem;
+        color: #787878;
+      }
     }
   }
   .bottom-nav {
     background-color: #fff;
+    font-family: "Roboto Condensed", sans-serif;
+    border-top-color: #f4f5f7;
+    padding: 0.815em 0 1px 0;
+    border-top-width: 2px;
+    border-top-style: solid;
+    li {
+      padding-left: 1.6em;
+    }
+    a {
+      text-decoration: none;
+      color: #6f6f6f;
+      font-weight: 500;
+
+    }
   }
 }

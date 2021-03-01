@@ -1,5 +1,5 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css");
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;500;700&display=swap");
 h1 {
   font-family: "Roboto Condensed", sans-serif;
 }
@@ -17,6 +17,8 @@ h1 {
 @media screen and (max-width: 980px) {
   .top-nav {
     height: 50px;
+    position: fixed;
+    width: 100%;
   }
   .top-nav .brand-logo {
     margin: auto 0;
@@ -69,7 +71,7 @@ h1 {
 
 .header-bottom {
   background-color: #f72210;
-  margin-right: 10em;
+  border-bottom: 2px solid #eeeeee;
 }
 .header-bottom::before {
   width: 66px !important;
@@ -84,6 +86,20 @@ h1 {
 }
 .header-bottom .mid-nav {
   background-color: #fff;
+  padding-right: 2em;
+}
+.header-bottom .mid-nav ul {
+  margin: auto 0;
+}
+.header-bottom .mid-nav ul li:first-child {
+  border-left-width: 0;
+}
+.header-bottom .mid-nav ul li {
+  flex-grow: 1;
+  text-align: center;
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: #d9d9d9;
 }
 .header-bottom .mid-nav a {
   text-decoration: none;
@@ -92,12 +108,31 @@ h1 {
   font-size: 1.266rem;
   font-weight: 700;
 }
-.header-bottom .mid-nav input {
+.header-bottom .mid-nav .mid-nav-search input {
   width: 60px;
   height: 54px;
+  outline: none;
+  border: none;
+}
+.header-bottom .mid-nav .mid-nav-search i {
+  font-size: 1.2rem;
+  color: #787878;
 }
 .header-bottom .bottom-nav {
   background-color: #fff;
+  font-family: "Roboto Condensed", sans-serif;
+  border-top-color: #f4f5f7;
+  padding: 0.815em 0 1px 0;
+  border-top-width: 2px;
+  border-top-style: solid;
+}
+.header-bottom .bottom-nav li {
+  padding-left: 1.6em;
+}
+.header-bottom .bottom-nav a {
+  text-decoration: none;
+  color: #6f6f6f;
+  font-weight: 500;
 }
 
 /*# sourceMappingURL=main.css.map */
