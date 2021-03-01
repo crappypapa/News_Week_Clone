@@ -36,6 +36,7 @@ body {
     transition: height width 0.6s;
     height: 20px !important;
     width: 132px;
+    padding-left: 1em;
   }
 }
 .top-nav .top-nav-date {
@@ -46,6 +47,7 @@ body {
   fill: #fff;
 }
 .top-nav .top-nav-action {
+  padding-right: 1em;
   margin: auto 0;
 }
 .top-nav .top-nav-action ul {
@@ -155,7 +157,7 @@ body {
 .footer-top {
   margin-bottom: 12px;
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 720px) {
   .footer-top .bottom-logo {
     margin: 0 0 0.5em 0.6em;
   }
@@ -177,7 +179,7 @@ body {
 .footer-links {
   border-top: 1px solid #d9d9d9;
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 720px) {
   .footer-links {
     padding: 0 0 0 0.6em;
   }
