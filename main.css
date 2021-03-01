@@ -13,9 +13,6 @@ body {
   min-height: 50%;
 }
 
-.footer-top {
-  margin-bottom: 12px;
-}
 @media screen and (max-width: 720px) {
   .footer-top .bottom-logo {
     margin: 0 0 0.5em 0.6em;
@@ -24,11 +21,6 @@ body {
 .footer-top p {
   font-size: 0.8rem;
   color: #666;
-  margin: 0;
-  padding-left: 1em;
-}
-.footer-top .social-icons li {
-  padding-left: 10px;
 }
 .footer-top .social-icons a {
   color: #666;
@@ -76,7 +68,6 @@ body {
 }
 
 .bottom-nav {
-  background-color: #fff;
   font-family: "Roboto Condensed", sans-serif;
   border-top-color: #f4f5f7;
   padding: 0.815em 0 1px 0;
@@ -85,12 +76,6 @@ body {
 }
 .bottom-nav ul {
   margin-bottom: 0.5em;
-}
-.bottom-nav li {
-  padding-left: 1.6em;
-}
-.bottom-nav li:nth-child(1) {
-  padding-left: 0;
 }
 .bottom-nav a {
   text-decoration: none;
@@ -107,39 +92,39 @@ body {
   background-color: #f72210;
   font-family: "Roboto Condensed", sans-serif;
 }
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 990px) {
   .top-nav {
     height: 50px;
     position: fixed;
     width: 100%;
   }
-  .top-nav .brand-logo {
+  .top-nav a {
     margin: auto 0;
   }
   .top-nav .brand-logo > svg {
-    transition: height 0.6s;
+    transition: height 0.6s ease;
     height: 20px !important;
     width: 132px;
     padding-left: 1em;
   }
 }
-.top-nav .top-nav-date {
-  color: white;
-  font-weight: 300;
-}
-.top-nav .brand-logo > img {
-  fill: #fff;
-}
 .top-nav .top-nav-action {
-  padding-right: 1em;
   margin: auto 0;
+}
+.top-nav .top-nav-action .nav-icon span {
+  display: block;
+  width: 30px;
+  border-radius: 3px;
+  height: 4px;
+  margin: 4px;
+  background-color: #ffffffa3;
+  cursor: pointer;
 }
 .top-nav .top-nav-action ul {
   margin: 0;
   padding: 0;
 }
 .top-nav .top-nav-action a {
-  color: #fff;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 1.125rem;
@@ -177,16 +162,10 @@ body {
   border-left: 12px solid white;
   border-top: 13px solid #f72210;
 }
-.header-bottom .mid-nav {
-  background-color: #fff;
-  padding-right: 2em;
-}
 .header-bottom .mid-nav ul {
   margin: auto 0;
 }
 .header-bottom .mid-nav ul li {
-  flex-grow: 1;
-  text-align: center;
   border-left-width: 1px;
   border-left-style: solid;
   border-left-color: #d9d9d9;
