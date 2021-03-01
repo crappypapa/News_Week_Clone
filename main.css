@@ -4,9 +4,18 @@ h1 {
   font-family: "Roboto Condensed", sans-serif;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 .page-header {
   position: relative;
   z-index: 10;
+}
+
+.main {
+  min-height: 50%;
 }
 
 .top-nav {
@@ -108,6 +117,10 @@ h1 {
   font-size: 1.266rem;
   font-weight: 700;
 }
+.header-bottom .mid-nav :hover,
+.header-bottom .mid-nav :focus {
+  color: #f72210;
+}
 .header-bottom .mid-nav .mid-nav-search input {
   width: 60px;
   height: 54px;
@@ -134,9 +147,18 @@ h1 {
   color: #6f6f6f;
   font-weight: 500;
 }
+.header-bottom .bottom-nav a:hover,
+.header-bottom .bottom-nav a:focus {
+  color: #f72210;
+}
 
 .footer-top {
   margin-bottom: 12px;
+}
+@media screen and (max-width: 420px) {
+  .footer-top .bottom-logo {
+    margin: 0 0 0.5em 0.6em;
+  }
 }
 .footer-top p {
   font-size: 0.8rem;
@@ -155,16 +177,28 @@ h1 {
 .footer-links {
   border-top: 1px solid #d9d9d9;
 }
+@media screen and (max-width: 420px) {
+  .footer-links {
+    padding: 0 0 0 0.6em;
+  }
+}
 .footer-links .footer-links-edition li,
 .footer-links .footer-links-mini li {
   border-right: 1px solid #d9d9d9;
   padding-right: 10px;
   margin-right: 10px;
 }
+@media screen and (max-width: 720px) {
+  .footer-links .footer-links-edition li,
+.footer-links .footer-links-mini li {
+    border: none;
+  }
+}
 .footer-links .footer-links-edition a,
 .footer-links .footer-links-mini a {
   color: #666;
   font-size: 0.8125rem;
+  white-space: nowrap;
 }
 .footer-links .footer-links-edition :hover,
 .footer-links .footer-links-mini :hover {

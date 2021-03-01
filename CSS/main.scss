@@ -4,9 +4,16 @@ h1 {
   font-family: "Roboto Condensed", sans-serif;
 }
 
+html, 
+body {
+  height: 100%;
+}
 .page-header {
   position: relative;
   z-index: 10;
+}
+.main {
+  min-height: 50%;
 }
 .top-nav {
   @media screen and(max-width: 980px) {
@@ -103,6 +110,10 @@ h1 {
       font-size: 1.266rem;
       font-weight: 700;
     }
+    :hover,
+    :focus {
+      color: #f72210;
+    }
     .mid-nav-search {
       input {
         width: 60px;
@@ -130,22 +141,30 @@ h1 {
       text-decoration: none;
       color: #6f6f6f;
       font-weight: 500;
-
+    }
+    a:hover,
+    a:focus {
+      color: #f72210;
     }
   }
 }
 
 .footer-top {
+  .bottom-logo {
+    @media screen and (max-width: 420px) {
+      margin: 0 0 0.5em 0.6em;
+    }
+  }
   margin-bottom: 12px;
   p {
     font-size: 0.8rem;
-    color: #666; 
+    color: #666;
     margin: 0;
     padding-left: 1em;
   }
   .social-icons {
     li {
-      padding-left: 10px
+      padding-left: 10px;
     }
     a {
       color: #666;
@@ -154,22 +173,28 @@ h1 {
   }
 }
 .footer-links {
+  @media screen and (max-width: 420px) {
+    padding: 0 0 0 0.6em;
+  }
   border-top: 1px solid #d9d9d9;
 
   .footer-links-edition,
   .footer-links-mini {
-    li { 
-    border-right: 1px solid #d9d9d9;
-    padding-right: 10px;
-    margin-right: 10px;
+    li {
+      @media screen and (max-width: 720px) {
+        border: none;
+      }
+      border-right: 1px solid #d9d9d9;
+      padding-right: 10px;
+      margin-right: 10px;
     }
-    a{
-    color: #666;
-    font-size: 0.8125rem
+    a {
+      color: #666;
+      font-size: 0.8125rem;
+      white-space: nowrap;
     }
     :hover {
-    color: black;
+      color: black;
     }
   }
 }
-
