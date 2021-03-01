@@ -4,15 +4,84 @@ h1 {
   font-family: "Roboto Condensed", sans-serif;
 }
 
+.page-header {
+  position: relative;
+  z-index: 10;
+}
+
 .top-nav {
+  height: 92px;
   background-color: #f72210;
   font-family: "Roboto Condensed", sans-serif;
 }
 .top-nav .top-nav-date {
   color: white;
+  font-weight: 300;
 }
 .top-nav .brand-logo > img {
   fill: #fff;
+}
+.top-nav .top-nav-action ul {
+  margin: 0;
+  padding: 0;
+}
+.top-nav .top-nav-action a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+.top-nav .top-nav-action .subscribe {
+  background-color: #ffe400;
+  border-radius: 3rem;
+}
+.top-nav .top-nav-action .subscribe::after {
+  border-right-width: 2px;
+  display: inline-block;
+  content: "";
+  border-right-style: solid;
+  border-top-style: solid;
+  transform: rotate(45deg);
+}
+.top-nav .top-nav-action .subscribe::after {
+  margin-bottom: 2px;
+  width: 10px;
+  height: 10px;
+  border-top-width: 2px;
+}
+
+.header-bottom {
+  background-color: #f72210;
+  margin-right: 10em;
+}
+.header-bottom::before {
+  width: 66px !important;
+  position: absolute;
+  top: 92;
+  right: 0;
+  content: "";
+  display: block;
+  background-color: #f72210;
+  border-left: 12px solid white;
+  border-top: 13px solid #f72210;
+}
+.header-bottom .mid-nav {
+  background-color: #fff;
+}
+.header-bottom .mid-nav a {
+  text-decoration: none;
+  font-family: "Roboto Condensed", sans-serif;
+  color: #111;
+  font-size: 1.266rem;
+  font-weight: 700;
+}
+.header-bottom .mid-nav input {
+  width: 60px;
+  height: 54px;
+}
+.header-bottom .bottom-nav {
+  background-color: #fff;
 }
 
 /*# sourceMappingURL=main.css.map */
