@@ -26,11 +26,11 @@ To get a local copy up and running:
 2) Run live server or simply open the index.html file with a browser
 ## Authors
 
-👤 **Author1**
+👤 **Olaoluwa Soladoye**
 
 - GitHub: [@crappypapa](https://github.com/crappypapa)
 
-👤 **Author2**
+👤 **Marijan Brvar**
 
 - GitHub: [@marijanbrvar](https://github.com/marijanbrvar)
 
@@ -41,7 +41,7 @@ Contributions, issues, and feature requests are welcome!
 
 ## Show your support
 
-Give a ⭐️ if you like this project!
+Give a ⭐️ if you like this project and how we manage to build it!
 
 ## 📝 License
 
