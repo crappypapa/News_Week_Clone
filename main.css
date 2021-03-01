@@ -18,6 +18,33 @@ body {
   min-height: 50%;
 }
 
+.bottom-nav {
+  background-color: #fff;
+  font-family: "Roboto Condensed", sans-serif;
+  border-top-color: #f4f5f7;
+  padding: 0.815em 0 1px 0;
+  border-top-width: 2px;
+  border-top-style: solid;
+}
+.bottom-nav ul {
+  margin-bottom: 0.5em;
+}
+.bottom-nav li {
+  padding-left: 1.6em;
+}
+.bottom-nav li:nth-child(1) {
+  padding-left: 0;
+}
+.bottom-nav a {
+  text-decoration: none;
+  color: #6f6f6f;
+  font-weight: 500;
+}
+.bottom-nav a:hover,
+.bottom-nav a:focus {
+  color: #f72210;
+}
+
 .top-nav {
   height: 92px;
   background-color: #f72210;
@@ -33,7 +60,7 @@ body {
     margin: auto 0;
   }
   .top-nav .brand-logo > svg {
-    transition: height width 0.6s;
+    transition: height 0.6s;
     height: 20px !important;
     width: 132px;
     padding-left: 1em;
@@ -72,86 +99,10 @@ body {
   border-right-style: solid;
   border-top-style: solid;
   transform: rotate(45deg);
-}
-.top-nav .top-nav-action .subscribe::after {
   margin-bottom: 2px;
   width: 10px;
   height: 10px;
   border-top-width: 2px;
-}
-
-.header-bottom {
-  background-color: #f72210;
-  border-bottom: 2px solid #eeeeee;
-}
-.header-bottom::before {
-  width: 66px !important;
-  position: absolute;
-  top: 92;
-  right: 0;
-  content: "";
-  display: block;
-  background-color: #f72210;
-  border-left: 12px solid white;
-  border-top: 13px solid #f72210;
-}
-.header-bottom .mid-nav {
-  background-color: #fff;
-  padding-right: 2em;
-}
-.header-bottom .mid-nav ul {
-  margin: auto 0;
-}
-.header-bottom .mid-nav ul li:first-child {
-  border-left-width: 0;
-}
-.header-bottom .mid-nav ul li {
-  flex-grow: 1;
-  text-align: center;
-  border-left-width: 1px;
-  border-left-style: solid;
-  border-left-color: #d9d9d9;
-}
-.header-bottom .mid-nav a {
-  text-decoration: none;
-  font-family: "Roboto Condensed", sans-serif;
-  color: #111;
-  font-size: 1.266rem;
-  font-weight: 700;
-}
-.header-bottom .mid-nav :hover,
-.header-bottom .mid-nav :focus {
-  color: #f72210;
-}
-.header-bottom .mid-nav .mid-nav-search input {
-  width: 60px;
-  height: 54px;
-  outline: none;
-  border: none;
-}
-.header-bottom .mid-nav .mid-nav-search i {
-  font-size: 1.2rem;
-  color: #787878;
-}
-.header-bottom .bottom-nav {
-  background-color: #fff;
-  font-family: "Roboto Condensed", sans-serif;
-  border-top-color: #f4f5f7;
-  padding: 0.815em 0 1px 0;
-  border-top-width: 2px;
-  border-top-style: solid;
-}
-.header-bottom .bottom-nav li {
-  padding-left: 1.6em;
-}
-.header-bottom .bottom-nav a {
-  text-decoration: none;
-  color: #6f6f6f;
-  font-weight: 500;
-}
-.header-bottom .bottom-nav a:hover,
-.header-bottom .bottom-nav a:focus {
-  color: #f72210;
 }
 
 .footer-top {
@@ -184,6 +135,10 @@ body {
     padding: 0 0 0 0.6em;
   }
 }
+.footer-links .footer-links-edition,
+.footer-links .footer-links-mini {
+  padding: 0 0 0.6em 0;
+}
 .footer-links .footer-links-edition li,
 .footer-links .footer-links-mini li {
   border-right: 1px solid #d9d9d9;
@@ -205,6 +160,60 @@ body {
 .footer-links .footer-links-edition :hover,
 .footer-links .footer-links-mini :hover {
   color: black;
+}
+
+.header-bottom {
+  background-color: #f72210;
+  border-bottom: 2px solid #eeeeee;
+}
+.header-bottom::before {
+  width: 66px !important;
+  position: absolute;
+  top: 92px;
+  right: 0;
+  content: "";
+  display: block;
+  background-color: #f72210;
+  border-left: 12px solid white;
+  border-top: 13px solid #f72210;
+}
+.header-bottom .mid-nav {
+  background-color: #fff;
+  padding-right: 2em;
+}
+.header-bottom .mid-nav ul {
+  margin: auto 0;
+}
+.header-bottom .mid-nav ul li {
+  flex-grow: 1;
+  text-align: center;
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: #d9d9d9;
+}
+.header-bottom .mid-nav ul li:first-child {
+  border-left-width: 0;
+}
+.header-bottom .mid-nav a {
+  text-decoration: none;
+  font-family: "Roboto Condensed", sans-serif;
+  color: #111;
+  font-size: 1.266rem;
+  font-weight: 700;
+}
+.header-bottom .mid-nav :hover,
+.header-bottom .mid-nav :focus {
+  color: #f72210;
+}
+.header-bottom .mid-nav .mid-nav-search input {
+  width: 60px;
+  height: 54px;
+  outline: none;
+  border: none;
+}
+.header-bottom .mid-nav .mid-nav-search i {
+  font-size: 1.2rem;
+  color: #787878;
 }
 
 /*# sourceMappingURL=main.css.map */
