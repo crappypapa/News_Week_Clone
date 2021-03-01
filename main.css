@@ -135,6 +135,9 @@ h1 {
   font-weight: 500;
 }
 
+.footer-top {
+  margin-bottom: 12px;
+}
 .footer-top p {
   font-size: 0.8rem;
   color: #666;
@@ -148,9 +151,24 @@ h1 {
   color: #666;
   font-size: 0.933rem;
 }
-.footer-top .footer-links-edition li,
-.footer-top .footer-links-mini li {
+
+.footer-links {
+  border-top: 1px solid #d9d9d9;
+}
+.footer-links .footer-links-edition li,
+.footer-links .footer-links-mini li {
   border-right: 1px solid #d9d9d9;
+  padding-right: 10px;
+  margin-right: 10px;
+}
+.footer-links .footer-links-edition a,
+.footer-links .footer-links-mini a {
+  color: #666;
+  font-size: 0.8125rem;
+}
+.footer-links .footer-links-edition :hover,
+.footer-links .footer-links-mini :hover {
+  color: black;
 }
 
 /*# sourceMappingURL=main.css.map */

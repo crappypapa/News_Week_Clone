@@ -136,6 +136,7 @@ h1 {
 }
 
 .footer-top {
+  margin-bottom: 12px;
   p {
     font-size: 0.8rem;
     color: #666; 
@@ -151,13 +152,24 @@ h1 {
       font-size: 0.933rem;
     }
   }
+}
+.footer-links {
+  border-top: 1px solid #d9d9d9;
 
   .footer-links-edition,
   .footer-links-mini {
     li { 
-      border-right: 1px solid #d9d9d9;
+    border-right: 1px solid #d9d9d9;
+    padding-right: 10px;
+    margin-right: 10px;
+    }
+    a{
+    color: #666;
+    font-size: 0.8125rem
+    }
+    :hover {
+    color: black;
     }
   }
 }
-
 
