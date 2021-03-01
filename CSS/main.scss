@@ -9,6 +9,17 @@ h1 {
   z-index: 10;
 }
 .top-nav {
+  @media screen and(max-width: 980px) {
+    height: 50px;
+    .brand-logo {
+      margin: auto 0;
+    }
+    .brand-logo > svg {
+      transition: height width .6s;
+      height: 20px!important;
+      width: 132px;
+    }
+  }
   height: 92px;
   background-color: #f72210;
   font-family: 'Roboto Condensed', sans-serif;
@@ -20,6 +31,7 @@ h1 {
     fill: #fff
   }
   .top-nav-action {
+    margin: auto 0;
     ul {
       margin: 0;
       padding: 0;

@@ -14,12 +14,28 @@ h1 {
   background-color: #f72210;
   font-family: "Roboto Condensed", sans-serif;
 }
+@media screen and (max-width: 980px) {
+  .top-nav {
+    height: 50px;
+  }
+  .top-nav .brand-logo {
+    margin: auto 0;
+  }
+  .top-nav .brand-logo > svg {
+    transition: height width 0.6s;
+    height: 20px !important;
+    width: 132px;
+  }
+}
 .top-nav .top-nav-date {
   color: white;
   font-weight: 300;
 }
 .top-nav .brand-logo > img {
   fill: #fff;
+}
+.top-nav .top-nav-action {
+  margin: auto 0;
 }
 .top-nav .top-nav-action ul {
   margin: 0;
