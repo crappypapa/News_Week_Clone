@@ -43,6 +43,3 @@ Contributions, issues, and feature requests are welcome!
 
 Give a ⭐️ if you like this project and how we manage to build it!
 
-## 📝 License
-
-This project is [MIT](lic.url) licensed.
