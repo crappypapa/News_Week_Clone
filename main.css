@@ -25,6 +25,11 @@ img {
   color: inherit;
 }
 
+.featured {
+  position: sticky;
+  top: 0;
+}
+
 article .wrap {
   position: relative;
 }
@@ -218,6 +223,16 @@ article h3 a:focus {
   font-family: "Roboto Condensed", sans-serif;
   background: url("../assets/img/free-sign-up.svg") center/108px no-repeat #f61602;
   border-radius: 3px;
+}
+
+.stories picture {
+  width: 100px;
+  height: 100px;
+}
+.stories picture img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 @media screen and (max-width: 720px) {
