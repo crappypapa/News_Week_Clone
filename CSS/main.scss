@@ -27,6 +27,16 @@ img {
   }
 }
 
+.info a {
+  display: block;
+  font-family: "Roboto Condensed", sans-serif;
+  text-decoration: none;
+  font-weight: 700;
+  color: #1111117c;
+  font-size: 1rem;
+  line-height: 20px;
+}
+
 .debate {
   .info {
     font-family: "Roboto Condensed", sans-serif;
@@ -96,16 +106,6 @@ img {
     text-align: center;
     margin: 6px auto;
   }
-}
-
-.info a {
-  display: block;
-  font-family: "Roboto Condensed", sans-serif;
-  text-decoration: none;
-  font-weight: 700;
-  color: #1111117c;
-  font-size: 1rem;
-  line-height: 20px;
 }
 
 .newsletter-signup {
