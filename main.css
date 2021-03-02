@@ -116,20 +116,25 @@ article h3 a:focus {
   text-transform: uppercase;
   font-weight: 300;
   font-size: 14px;
+  line-height: 16px;
+  color: #555;
+  padding-top: 0.3em;
 }
-.debate a {
+.debate .info a {
+  font-family: "Roboto Condensed", sans-serif;
   text-decoration: none;
   color: #111111;
+  font-size: 1.1rem;
 }
-.debate a:hover,
-.debate a:focus {
+.debate .info a:hover,
+.debate .info a:focus {
   text-decoration: underline #f72210;
   color: #111111;
 }
 .debate .deco {
   position: relative;
 }
-.debate > ::before {
+.debate .deco::before {
   top: calc(50% - 2px);
   content: "";
   display: block;
@@ -139,7 +144,7 @@ article h3 a:focus {
   left: 0;
   right: 0;
 }
-.debate > ::after {
+.debate .deco::after {
   top: 50%;
   content: "";
   display: block;
