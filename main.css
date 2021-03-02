@@ -20,6 +20,10 @@ img {
   text-transform: uppercase;
   padding-bottom: 0.3em;
 }
+.block-title a {
+  text-decoration: none;
+  color: inherit;
+}
 
 article .wrap {
   position: relative;
@@ -99,6 +103,63 @@ article h3 a:hover,
 article h3 a:focus {
   text-decoration: underline #f72210;
   color: #111111;
+}
+
+.debate .info {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  line-height: 20px;
+  padding-right: 0.5em;
+}
+.debate .info p:last-child {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 14px;
+}
+.debate a {
+  text-decoration: none;
+  color: #111111;
+}
+.debate a:hover,
+.debate a:focus {
+  text-decoration: underline #f72210;
+  color: #111111;
+}
+.debate .deco {
+  position: relative;
+}
+.debate > ::before {
+  top: calc(50% - 2px);
+  content: "";
+  display: block;
+  background-color: #d9d9d9;
+  height: 1px;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+.debate > ::after {
+  top: 50%;
+  content: "";
+  display: block;
+  background-color: #d9d9d9;
+  height: 1px;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+.debate .vs {
+  position: relative;
+  z-index: 1;
+  width: 32px;
+  height: 32px;
+  background-color: #000;
+  color: #d6d6d6d6;
+  border-radius: 50%;
+  font: bold 14px/32px "Roboto Condensed", sans-serif;
+  text-align: center;
+  margin: 6px auto;
 }
 
 @media screen and (max-width: 720px) {
