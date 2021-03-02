@@ -37,6 +37,16 @@ img {
   line-height: 20px;
 }
 
+.info a:hover {
+  display: block;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 700;
+  color: #111;
+  text-decoration: underline #f72210;
+  font-size: 1rem;
+  line-height: 20px;
+}
+
 .debate {
   .info {
     font-family: "Roboto Condensed", sans-serif;
