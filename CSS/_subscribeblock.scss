@@ -1,0 +1,42 @@
+.subscribe-block {
+  .block-title {
+    font: bold 16px/16px "Roboto Condensed", sans-serif;
+    border-top: 1px solid #d9d9d9;
+    color: #f72210;
+    padding-top: 25px;
+    padding-bottom: 11px;
+    text-transform: uppercase;
+  }
+
+  .sub-body {
+    h2 {
+      font: bold 24px/24px "Roboto Condensed", sans-serif;
+      padding-right: 1em;
+    }
+    p {
+      font: 300 15px/21px "Helvetica Neue", Helvetica, Arial, sans-serif;
+      margin-bottom: 20px;
+    }
+  }
+
+  .image-set {
+    position: relative;
+    padding-bottom: 13px;
+    padding-right: 90px;
+
+    .image-set-container {
+      width: 170px;
+      height: 228px;
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+    }
+    .top-img {
+      position: absolute;
+      top: 13px;
+      left: 80px;
+    }
+  }
+}
