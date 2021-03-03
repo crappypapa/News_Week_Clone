@@ -8,7 +8,33 @@
     text-transform: uppercase;
   }
 
+  .pelcro-subscribe-button {
+    position: relative;
+    font: 400 18px/18px "Roboto Condensed", sans-serif;
+    cursor: pointer;
+    background-color: #f72310;
+    color: white;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 10px 10px 10px 12px;
+    border-radius: 3px;
+    border: none;
+
+    &::after {
+      width: 6px;
+      height: 11px;
+      content: "›";
+      display: inline-block;
+      margin-left: 9px;
+    }
+  }
+
+
   .sub-body {
+    @media screen and (max-width: 768px) {
+      text-align: center;
+    }
+
     h2 {
       font: bold 24px/24px "Roboto Condensed", sans-serif;
       padding-right: 1em;
@@ -20,7 +46,99 @@
     }
   }
 
+  .news-letter {
+    form input {
+      width: 100%;
+      height: 38px;
+      line-height: 38px;
+      border: 1px solid rgba(171, 171, 171, 0.933);
+    }
+
+    .form-submit {
+      color: white;
+      text-transform: uppercase;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 0;
+      border: 0;
+      font-family: "Roboto Condensed", sans-serif;
+      background:
+        url(https://web.archive.org/web/20210120130223im_/https://g.newsweek.com/www/images/free-sign-up.svg)
+        center/108px no-repeat #f61602;
+      border-radius: 3px;
+      margin-top: 11px;
+    }
+
+    .news-letter-img {
+      width: 48%;
+      height: 290px;
+      max-height: 100%;
+      max-width: 191px;
+      position: relative;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .news-letter-body {
+      padding: 1em;
+
+      h2 {
+        font: bold 24px/24px "Roboto Condensed", sans-serif;
+        padding-right: 1em;
+      }
+
+      p {
+        font: 300 15px/21px "Helvetica Neue", Helvetica, Arial, sans-serif;
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .news-letter {
+      flex-direction: column !important;
+
+      .news-letter-img {
+        width: 100%;
+        height: 200px;
+        max-height: 100%;
+        max-width: 800px;
+        position: relative;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      .news-letter-body {
+        padding: 1em;
+        text-align: center;
+
+        h2 {
+          font: bold 24px/24px "Roboto Condensed", sans-serif;
+          padding-right: 1em;
+        }
+
+        p {
+          font: 300 15px/21px "Helvetica Neue", Helvetica, Arial, sans-serif;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+
   .image-set {
+    @media screen and (max-width: 768px) {
+      margin: 1em auto;
+      padding-right: 130px;
+    }
+
     position: relative;
     padding-bottom: 13px;
     padding-right: 90px;
