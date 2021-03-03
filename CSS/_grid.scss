@@ -1,4 +1,4 @@
-@media screen and (max-width: 978px) {
+@media screen and (max-width: 767px) {
   .grid-container {
     display: grid;
     grid-template-columns: 1fr;
@@ -15,55 +15,48 @@
       "sponsored2"
       "sign"
       "sponsored3";
-  }
+    .more {
+      grid-area: more;
+    }
 
-  .box{
-    background-color: red;
-    height: 100px;
-    width: 100%;
-  }
+    .latest {
+      grid-area: latest;
+    }
 
-  .more {
-    grid-area: more;
-  }
+    .turn {
+      grid-area: turn;
+    }
 
-  .latest {
-    grid-area: latest;
-  }
+    .travel {
+      grid-area: travel;
+    }
 
-  .turn {
-    grid-area: turn;
-  }
+    .sign {
+      grid-area: sign;
+    }
 
-  .travel {
-    grid-area: travel;
-  }
+    .top-story {
+      grid-area: topstory;
+    }
 
-  .sign {
-    grid-area: sign;
-  }
+    .featured-story {
+      grid-area: featured;
+    }
 
-  .top-story {
-    grid-area: topstory;
-  }
+    .the-debate {
+      grid-area: debate;
+    }
 
-  .featured-story {
-    grid-area: featured;
-  }
+    .sponsored1 {
+      grid-area: sponsored1;
+    }
 
-  .the-debate {
-    grid-area: debate;
-  }
+    .sponsored2 {
+      grid-area: sponsored2;
+    }
 
-  .sponsored1 {
-    grid-area: sponsored1;
-  }
-
-  .sponsored2 {
-    grid-area: sponsored2;
-  }
-
-  .sponsored3 {
-    grid-area: sponsored3;
+    .sponsored3 {
+      grid-area: sponsored3;
+    }
   }
 }
