@@ -486,7 +486,8 @@ article p {
 .nw-cover {
   margin-bottom: 1em;
 }
-.nw-cover a {
+.nw-cover a,
+.nw-cover a:hover {
   color: #f72210;
 }
 .nw-cover .nw-cover-top {
