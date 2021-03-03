@@ -623,4 +623,65 @@ img {
   margin-right: 10px;
 }
 
+.block-nw-magazine-section-pick .block-title {
+  font: bold 16px/16px "Roboto Condensed", sans-serif;
+  border-top: 1px solid #d9d9d9;
+  color: #f72210;
+  padding-top: 25px;
+  padding-bottom: 11px;
+  font-size: 22px;
+  line-height: 22px;
+  text-transform: none;
+}
+
+.card .card-image {
+  width: 100%;
+  height: 270px;
+  max-height: 100%;
+}
+.card .card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-body {
+  margin: 10px 0 25px 0;
+  padding: 0;
+}
+.card-body h4 {
+  font: bold 22px/22px "Roboto Condensed", sans-serif;
+}
+.card-body a {
+  text-decoration: none;
+  color: #111;
+}
+
+.side-card {
+  padding-bottom: 1em;
+  border-bottom: 1px solid #9d9d9d5e;
+}
+.side-card .side-card-img {
+  flex: 0 0 110px;
+  width: 110px;
+  height: 110px;
+  margin-right: 1em;
+}
+.side-card .side-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.side-card .side-card-body h4 {
+  font: bold 18px/22px "Roboto Condensed", sans-serif;
+}
+.side-card .side-card-body h4 a {
+  text-decoration: none;
+  color: #111;
+}
+.side-card .side-card-body h4 a:hover {
+  text-decoration: underline #f72210;
+  color: #111;
+}
+
 /*# sourceMappingURL=main.css.map */
