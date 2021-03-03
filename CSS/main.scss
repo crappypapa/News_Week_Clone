@@ -1,18 +1,13 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;500;700&display=swap");
-
-h1 {
-  font-family: "Roboto Condensed", sans-serif;
-}
-
-html,
-body {
-  height: 100%;
-}
-
-.main {
-  min-height: 50%;
-}
-
+@import "grid";
 @import "footer";
 @import "header";
+@import "article";
+@import "stories";
+@import "debate";
+@import "signup";
+@import "inmagazine";
+@import "general";
+@import "sectionpick";
+@import "subscribeblock";

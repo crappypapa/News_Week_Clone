@@ -1,0 +1,63 @@
+@media screen and (max-width: 767px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "topstory"
+      "featured"
+      "debate"
+      "sponsored1"
+      "more"
+      "latest"
+      "turn"
+      "travel"
+      "sponsored2"
+      "sign"
+      "sponsored3";
+
+    .more {
+      grid-area: more;
+    }
+
+    .latest {
+      grid-area: latest;
+    }
+
+    .turn {
+      grid-area: turn;
+    }
+
+    .travel {
+      grid-area: travel;
+    }
+
+    .sign {
+      grid-area: sign;
+    }
+
+    .top-story {
+      grid-area: topstory;
+    }
+
+    .featured-story {
+      grid-area: featured;
+    }
+
+    .the-debate {
+      grid-area: debate;
+    }
+
+    .sponsored1 {
+      grid-area: sponsored1;
+    }
+
+    .sponsored2 {
+      grid-area: sponsored2;
+    }
+
+    .sponsored3 {
+      grid-area: sponsored3;
+    }
+  }
+}
