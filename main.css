@@ -110,6 +110,8 @@
   text-decoration: none;
   color: #6f6f6f;
   font-weight: 500;
+  text-decoration-color: #111111;
+  transition: color 1s;
 }
 .bottom-nav a:hover,
 .bottom-nav a:focus {
@@ -246,6 +248,7 @@
   color: #111;
   font-size: 1.266rem;
   font-weight: 700;
+  transition: color 1s;
 }
 .header-bottom .mid-nav :hover,
 .header-bottom .mid-nav :focus {
