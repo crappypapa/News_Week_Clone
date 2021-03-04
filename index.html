@@ -17,7 +17,7 @@
 
     <div class="top-nav d-flex justify-content-between align-items-end px-sm-3 px-lg-3 pt-lg-4 pb-lg-3">
       <div class="d-none d-lg-block text-white fw-light">Wed, Jan 20, 2021</div>
-      <div class="brand-logo" >
+      <div class="brand-logo">
         <a href="#">
           <svg version="1.1" width="396" height="60" xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 396 60"
@@ -46,7 +46,7 @@
             </a>
           </li>
         </ul>
-        <div class="nav-icon d-md-block d-lg-none my-auto ms-2 me-3">
+        <div id="nav-icon" class="d-md-block d-lg-none my-auto ms-2 me-3">
           <span></span>
           <span></span>
           <span></span>
@@ -2365,6 +2365,16 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
     </script>
+  <script>
+    let navicon = document.getElementById('nav-icon');
+    navicon.addEventListener('click', () => {
+      if (navicon.classList.contains('open')) {
+        navicon.classList.remove('open');
+      } else {
+        navicon.classList.add('open');
+      }
+    })
+  </script>
 </body>
 
 </html>
