@@ -110,7 +110,7 @@
   text-decoration: none;
   color: #6f6f6f;
   font-weight: 500;
-  text-decoration-color: #111111;
+  text-decoration-color: #111;
   transition: color 1s;
 }
 .bottom-nav a:hover,
@@ -123,6 +123,23 @@
   background-color: #f72210;
   font-family: "Roboto Condensed", sans-serif;
 }
+.top-nav .brand-logo > a > svg {
+  fill: #fff !important;
+  height: 60px !important;
+  width: 396px !important;
+  transition: height 1s, width 1s;
+  animation: spin 2s linear 1;
+}
+.top-nav .brand-logo > a > svg:hover, .top-nav .brand-logo > a > svg:focus {
+  fill: #ffffffe3 !important;
+  height: 54px !important;
+  width: 356px !important;
+}
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
 @media screen and (max-width: 990px) {
   .top-nav {
     height: 50px;
@@ -134,11 +151,26 @@
   .top-nav a {
     margin: auto 0;
   }
-  .top-nav .brand-logo > svg {
-    transition: height 0.6s ease;
+  .top-nav .brand-logo {
+    height: 50px;
+    padding: 13px 0;
+  }
+  .top-nav .brand-logo > a > svg {
+    fill: #fff !important;
     height: 20px !important;
-    width: 132px;
-    padding-left: 1em;
+    width: 136px !important;
+    transition: height 1s, width 1s;
+    animation: spin 2s linear 1;
+  }
+  .top-nav .brand-logo > a > svg:hover, .top-nav .brand-logo > a > svg:focus {
+    fill: #ffffffe3 !important;
+    height: 54px !important;
+    width: 356px !important;
+  }
+  @keyframes spin {
+    100% {
+      transform: rotate(360deg);
+    }
   }
 }
 .top-nav .top-nav-action {
