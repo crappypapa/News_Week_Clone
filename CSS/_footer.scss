@@ -15,6 +15,12 @@
       color: #666;
       font-size: 0.933rem;
     }
+    :hover{
+      color: #f72210;
+      transform: rotate(360deg);
+      padding-left: 20px;
+      transition: all 3s ease-out
+    }
   }
 }
 
