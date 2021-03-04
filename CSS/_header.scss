@@ -129,21 +129,33 @@
       font-weight: 400;
     }
 
-    .subscribe {
+    .subscribe-btn {
       background-color: #ffe400;
+      padding: 2px 0;
       border-radius: 3rem;
+      border: none;
 
-      &::after {
-        border-right-width: 2px;
-        display: inline-block;
-        content: "";
-        border-right-style: solid;
-        border-top-style: solid;
-        transform: rotate(45deg);
-        margin-bottom: 2px;
-        width: 10px;
-        height: 10px;
-        border-top-width: 2px;
+      .subscribe {
+        &::after {
+          border-right-width: 2px;
+          display: inline-block;
+          content: "";
+          border-right-style: solid;
+          border-top-style: solid;
+          transform: rotate(45deg);
+          margin-bottom: 2px;
+          width: 10px;
+          height: 10px;
+          border-top-width: 2px;
+        }
+      }
+
+      &:hover {
+        padding: 2px 0;
+        border-radius: 0.3rem;
+        box-sizing: border-box;
+        border: 1px solid #111;
+        transition: border-radius 0.5s;
       }
     }
 
@@ -155,22 +167,34 @@
         font-weight: 400;
       }
 
-      .subscribe {
+      .subscribe-btn {
+        margin-top: 3px;
         background-color: #ffe400;
-        border-radius: 1.9rem;
-        margin: auto 0;
+        padding: 2px 0;
+        border-radius: 3rem;
+        border: none;
 
-        &::after {
-          border-right-width: 2px;
-          display: inline-block;
-          content: "";
-          border-right-style: solid;
-          border-top-style: solid;
-          transform: rotate(45deg);
-          margin-bottom: 1px;
-          width: 8px;
-          height: 8px;
-          border-top-width: 2px;
+        .subscribe {
+          &::after {
+            border-right-width: 2px;
+            display: inline-block;
+            content: "";
+            border-right-style: solid;
+            border-top-style: solid;
+            transform: rotate(45deg);
+            margin-bottom: 2px;
+            width: 10px;
+            height: 10px;
+            border-top-width: 2px;
+          }
+        }
+
+        &:hover {
+          padding: 2px 0;
+          border-radius: 0.3rem;
+          box-sizing: border-box;
+          border: 1px solid #111;
+          transition: border-radius 0.5s;
         }
       }
     }

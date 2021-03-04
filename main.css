@@ -3,23 +3,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;500;700&display=swap");
 /* Icon 1 */
 #nav-icon {
-  width: 32px;
-  height: 32px;
-  -webkit-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
+  width: 24px;
+  height: 22px;
   transform: rotate(0deg);
-  -webkit-transition: 0.5s ease-in-out;
-  -moz-transition: 0.5s ease-in-out;
-  -o-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
   cursor: pointer;
 }
-
 #nav-icon span {
   display: block;
   position: absolute;
-  height: 4px;
+  height: 3px;
   width: 100%;
   background: #fff;
   border-radius: 9px;
@@ -28,29 +21,23 @@
   transform: rotate(0deg);
   transition: 0.25s ease-in-out;
 }
-
 #nav-icon span:nth-child(1) {
   top: 0;
 }
-
 #nav-icon span:nth-child(2) {
-  top: 10px;
+  top: 8px;
 }
-
 #nav-icon span:nth-child(3) {
-  top: 20px;
+  top: 16px;
 }
-
 #nav-icon.open span:nth-child(1) {
   top: 10px;
   transform: rotate(135deg);
 }
-
 #nav-icon.open span:nth-child(2) {
   opacity: 0;
-  left: -60px;
+  top: -60px;
 }
-
 #nav-icon.open span:nth-child(3) {
   top: 10px;
   transform: rotate(-135deg);
@@ -261,11 +248,13 @@
   font-size: 1.125rem;
   font-weight: 400;
 }
-.top-nav .top-nav-action .subscribe {
+.top-nav .top-nav-action .subscribe-btn {
   background-color: #ffe400;
+  padding: 2px 0;
   border-radius: 3rem;
+  border: none;
 }
-.top-nav .top-nav-action .subscribe::after {
+.top-nav .top-nav-action .subscribe-btn .subscribe::after {
   border-right-width: 2px;
   display: inline-block;
   content: "";
@@ -277,6 +266,13 @@
   height: 10px;
   border-top-width: 2px;
 }
+.top-nav .top-nav-action .subscribe-btn:hover {
+  padding: 2px 0;
+  border-radius: 0.3rem;
+  box-sizing: border-box;
+  border: 1px solid #111;
+  transition: border-radius 0.5s;
+}
 @media screen and (max-width: 560px) {
   .top-nav .top-nav-action a {
     text-decoration: none;
@@ -284,22 +280,31 @@
     font-size: 0.9rem;
     font-weight: 400;
   }
-  .top-nav .top-nav-action .subscribe {
+  .top-nav .top-nav-action .subscribe-btn {
+    margin-top: 3px;
     background-color: #ffe400;
-    border-radius: 1.9rem;
-    margin: auto 0;
+    padding: 2px 0;
+    border-radius: 3rem;
+    border: none;
   }
-  .top-nav .top-nav-action .subscribe::after {
+  .top-nav .top-nav-action .subscribe-btn .subscribe::after {
     border-right-width: 2px;
     display: inline-block;
     content: "";
     border-right-style: solid;
     border-top-style: solid;
     transform: rotate(45deg);
-    margin-bottom: 1px;
-    width: 8px;
-    height: 8px;
+    margin-bottom: 2px;
+    width: 10px;
+    height: 10px;
     border-top-width: 2px;
+  }
+  .top-nav .top-nav-action .subscribe-btn:hover {
+    padding: 2px 0;
+    border-radius: 0.3rem;
+    box-sizing: border-box;
+    border: 1px solid #111;
+    transition: border-radius 0.5s;
   }
 }
 
