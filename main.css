@@ -21,7 +21,7 @@
   position: absolute;
   height: 4px;
   width: 100%;
-  background: #ffffff;
+  background: #fff;
   border-radius: 9px;
   opacity: 1;
   left: 0;
@@ -30,7 +30,7 @@
 }
 
 #nav-icon span:nth-child(1) {
-  top: 0px;
+  top: 0;
 }
 
 #nav-icon span:nth-child(2) {
